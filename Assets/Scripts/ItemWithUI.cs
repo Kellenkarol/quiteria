@@ -11,7 +11,6 @@ public class ItemWithUI : MonoBehaviour
     private bool closest = false;
 
     private void OnCollisionEnter2D(Collision2D other) {
-        Debug.Log("Entrou!");
         if (other.gameObject.tag == "Player") {
             closest = true;
         }
@@ -28,7 +27,6 @@ public class ItemWithUI : MonoBehaviour
     private void Update() {
         if (closest) {
             if (Input.GetKeyUp(KeyCode.Space)) {
-                Debug.Log("Abriu!");
                 if (OnUserAction != null) {
                     OnUserAction(UIGameObject);
                 }
