@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Maca : Item
 {
-    public string name;
+    //public string name;
 
     public Maca()
     {
@@ -13,7 +13,7 @@ public class Maca : Item
     // Start is called before the first frame update
     void Start()
     {
-        nome.text = name;
+        //nome.text = name;
     }
 
     // Update is called once per frame

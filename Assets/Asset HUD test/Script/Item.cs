@@ -7,7 +7,7 @@ public class Item : MonoBehaviour
 {
     public int id, indice;
     protected TextMesh nome;
-    TextMesh qtd;
+    protected TextMesh qtd;
     public GameObject objeto;
     public bool destroy;
     public Texture2D imagem;
