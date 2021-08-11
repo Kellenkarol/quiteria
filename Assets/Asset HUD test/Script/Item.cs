@@ -6,11 +6,16 @@ using UnityEngine.UI;
 public class Item : MonoBehaviour
 {
     public int id, indice;
-    public TextMesh nome;
-    public TextMesh qtd;
+    protected TextMesh nome;
+    TextMesh qtd;
     public GameObject objeto;
     public bool destroy;
     public Texture2D imagem;
+
+    public Item()
+    {
+
+    }
     void Start()
     {
         
