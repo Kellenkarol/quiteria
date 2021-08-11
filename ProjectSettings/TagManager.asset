@@ -11,10 +11,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Botao
   - Water
   - UI
-  - 
+  - TextoBotao
   - 
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Botao
+    uniqueID: 451774011
+    locked: 0
+  - name: TextoBotao
+    uniqueID: 562834173
     locked: 0
