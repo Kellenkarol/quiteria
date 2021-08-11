@@ -10,13 +10,12 @@ public class PlayerController : MonoBehaviour
     {
         
     }
-
     void FixedUpdate()
     {
         var moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
  
         if (moveInput.y != 0) {
-            transform.position += moveInput.y * Vector3.up * speed * Time.fixedDeltaTime;
+            transform.position += moveInput.y * Vector3.up * speed/2 * Time.fixedDeltaTime;
         }
     
         if (moveInput.x != 0) {
