@@ -10,7 +10,6 @@ public class UIManager : MonoBehaviour
     }
 
     private void ItemWithUI_OnUserInput(GameObject UIGameObject) {
-        Debug.Log(UIGameObject.activeSelf);
         UIGameObject.SetActive(!UIGameObject.activeSelf);
     }
 
