@@ -22,6 +22,21 @@ public class Player : MonoBehaviour
         health -= damage;
     }
 
+    public void ChangeCloth(int clothID)
+    {
+        Renderer playerRenderer = gameObject.GetComponent<Renderer>();
+
+        switch (clothID)
+        {
+            case 1: 
+                playerRenderer.material.color = Color.magenta;
+                break;
+            case 2:
+                playerRenderer.material.color = Color.green;
+                break;
+        }
+    }
+
     private void Update() {
         healthBar.value = health;
     }

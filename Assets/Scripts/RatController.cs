@@ -6,13 +6,17 @@ public class RatController : MonoBehaviour
 {
     public float speed = 10;
     private string direction = "d";
+    private Player player;
 
-    private void Start() {
+    private void Start() 
+    {
         transform.position = new Vector3(transform.position.x, -4.6f, transform.position.z);
+        player = Player.instance;
     }
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
         if (other.gameObject.tag == "Player") {
-            Player.instance.TakeDamage(10);
+            player.TakeDamage(10);
         }
     }
     void Update()
