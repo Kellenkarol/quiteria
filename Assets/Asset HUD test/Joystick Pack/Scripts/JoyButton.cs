@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class JoyButton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
+public class JoyButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [HideInInspector] protected bool Pressed;
+
+    public GameObject background;
     
     void Start()
     {
-        
+        background.SetActive(false);
     }
 
     
@@ -20,11 +22,13 @@ public class JoyButton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Pressed = true;
+        background.SetActive(true);
+        //Pressed = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Pressed = false;
+        background.SetActive(false);
+        //Pressed = false;
     }
 }
