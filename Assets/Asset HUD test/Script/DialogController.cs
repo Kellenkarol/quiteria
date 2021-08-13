@@ -28,8 +28,8 @@ public class DialogController : MonoBehaviour
     void Start()
     {
         imagem = GetComponent<Image>();
-        nome.text = "Chupetinha";
-        texto.text = "Chupetilson está doente foi pra casa ficar de home office, lalala. Take the Egg Masturbation";
+        nome.text = "Joismar";
+        texto.text = "Lorem Ipsum lalalallalalalallalalalalla..........";
         
         sprite = Resources.Load<Sprite>("jooj");
 
