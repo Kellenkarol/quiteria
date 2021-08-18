@@ -15,6 +15,7 @@ public class ItemWithUI : MonoBehaviour
             closest = true;
         }
     }
+
     private void OnCollisionExit2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {
             closest = false;
@@ -23,7 +24,7 @@ public class ItemWithUI : MonoBehaviour
             }
         }
     }
-
+    
     private void Update() {
         if (closest) {
             if (Input.GetKeyUp(KeyCode.Space)) {
